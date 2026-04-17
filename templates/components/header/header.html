@@ -3,8 +3,13 @@
     <div class="container__img">
         <img src="{% static 'img/INACAP.jpg' %}" alt="INACAP" />
     </div>
+
     <h1>MAPA TERRITORIAL DE ÑUBLE</h1>
-    <div class="container__img">
-        <img src="{% static 'img/vcm.png' %}" alt="VCM" />
-    </div>
+
+    <form method="post" action="{% url 'logout' %}" class="logout-form">
+        {% csrf_token %}
+        <button type="submit" class="logout-btn">
+            <img src="{% static 'img/vcm.png' %}" alt="Cerrar sesión" class="logout-img" />
+        </button>
+    </form>
 </header>

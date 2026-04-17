@@ -147,3 +147,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 if DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # else: EMAIL_BACKEND = [Configuración de correo]
+
+LOGIN_REDIRECT_URL = "Mapa"
+LOGOUT_REDIRECT_URL = "login"
+LOGIN_URL = "login"
